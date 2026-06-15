@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Kiddo SDUI",
+    "slug": "kiddo-sdui",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "kiddo",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kiddo.sdui"
+    },
+    "android": {
+      "package": "com.kiddo.sdui"
+    }
+  }
+}
