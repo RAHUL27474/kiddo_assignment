@@ -184,7 +184,7 @@ A release APK has been included in the submission package for easy evaluation.
 File:
 
 ```text
-app-release.apk
+kiddo.apk
 ```
 
 ---
