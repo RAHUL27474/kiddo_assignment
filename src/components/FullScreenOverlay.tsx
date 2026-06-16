@@ -42,7 +42,7 @@ function FullScreenOverlayBase({ node }: RegistryComponentProps<FullScreenOverla
   }
 
   return (
-    <View pointerEvents="none" style={styles.container}>
+    <View style={[styles.container, { pointerEvents: "none" }]}> 
       <LottieView
         autoPlay
         loop

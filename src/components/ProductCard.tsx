@@ -1,5 +1,5 @@
 import { memo, useCallback } from "react";
-import { Image, Pressable, StyleSheet, Text, View, type DimensionValue } from "react-native";
+import { Image, Platform, Pressable, StyleSheet, Text, View, type DimensionValue } from "react-native";
 
 import { handleAction } from "../actions/actionDispatcher";
 import { useCartQuantity } from "../hooks/useCartQuantity";
@@ -69,7 +69,19 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     minHeight: 216,
     overflow: "hidden",
-    padding: 10
+    padding: 12,
+    ...Platform.select({
+      web: {
+        boxShadow: "0px 4px 16px rgba(0, 0, 0, 0.08)"
+      },
+      default: {
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.06,
+        shadowRadius: 8,
+        elevation: 2
+      }
+    })
   },
   image: {
     height: "100%",

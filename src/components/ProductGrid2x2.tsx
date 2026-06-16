@@ -36,7 +36,9 @@ function ProductGrid2x2Base({ node, renderChildren }: RegistryComponentProps<Pro
       <Text style={[styles.title, { color: theme.text }]}>{props.title}</Text>
       <View style={styles.grid}>
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} width="48.5%" />
+          <View key={product.id} style={styles.cell}>
+            <ProductCard product={product} width="100%" />
+          </View>
         ))}
       </View>
       {renderChildren(node.children)}
@@ -62,5 +64,8 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     gap: 10,
     justifyContent: "space-between"
+  },
+  cell: {
+    width: "48%"
   }
 });

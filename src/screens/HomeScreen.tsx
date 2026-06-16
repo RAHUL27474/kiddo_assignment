@@ -16,6 +16,8 @@ export const HomeScreen = memo(HomeScreenBase);
 
 const styles = StyleSheet.create({
   safeArea: {
-    flex: 1
+    flex: 1,
+    backgroundColor: "#FFF5E6",
+    paddingBottom: 24
   }
 });

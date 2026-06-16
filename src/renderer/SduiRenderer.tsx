@@ -93,7 +93,7 @@ function SduiRendererContent({ nodes }: { nodes: SduiNode[] }) {
         contentContainerStyle={styles.feedContent}
       />
 
-      <View pointerEvents="none" style={StyleSheet.absoluteFill}>
+      <View style={[StyleSheet.absoluteFill, { pointerEvents: "none" }]}> 
         {overlayNodes.map((node, index) => (
           <Fragment key={getNodeKey(node, index)}>{renderNode(node)}</Fragment>
         ))}
@@ -119,6 +119,8 @@ const styles = StyleSheet.create({
     flex: 1
   },
   feedContent: {
-    paddingBottom: 32
+    paddingTop: 16,
+    paddingBottom: 32,
+    paddingHorizontal: 0
   }
 });
