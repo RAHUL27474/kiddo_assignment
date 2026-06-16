@@ -15,6 +15,12 @@
     },
     "android": {
       "package": "com.kiddo.sdui"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "51e8dee0-e161-43c6-840d-900e7cace61e"
+      }
+    },
+    "owner": "rahul27474"
   }
 }
