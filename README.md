@@ -148,7 +148,7 @@ src/
 ### Clone Repository
 
 ```bash
-git clone <https://github.com/RAHUL27474/kiddo_assignment.git>
+git clone https://github.com/RAHUL27474/kiddo_assignment.git
 ```
 
 ### Install Dependencies
